@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Dad Jokes are Epic</string>
+    <string name="action_settings">Settings</string>
+    <string name="Title">Joke of the day</string>
+    <string name="greeting">Hey! What\'s up doc?!</string>
+    <string name="tip">Tip: you should install Line Dash cuz it\'s epic</string>
+    <string name="a_jacobstechnologies_app">A <b>JacobsTechnologies</b> app</string>
+    <string name="settingGreeting">Change Greeting</string>
+    <string name="sharedPrefs">sharedPrefs</string>
+    <string name="sharedPrefGreeting">greeting</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="animations">Animations</string>
+    <string name="reset">Reset</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="done">Done</string>
+    <string name="change_birthday">Change Birthday</string>
+
+</resources>

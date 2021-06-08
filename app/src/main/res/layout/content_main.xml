@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/jokeBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingTop="0dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="70dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Jokeoftheday" />
+
+    <TextView
+        android:id="@+id/Jokeoftheday"
+        android:layout_width="239dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:text="@string/Title"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Thegreeting" />
+
+    <TextView
+        android:id="@+id/Thegreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center"
+        android:text="@string/greeting"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20sp"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/Jokeoftheday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="132dp"
+        android:gravity="center"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="@string/tip"
+        android:textSize="20sp"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="@id/jacobstechnologies2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ResetJoke" />
+
+    <TextView
+        android:id="@+id/jacobstechnologies2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/a_jacobstechnologies_app"
+        android:textSize="20sp"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/NextJoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:onClick="NextJoke"
+        android:text="@string/next"
+        app:layout_constraintStart_toEndOf="@+id/ResetJoke"
+        app:layout_constraintTop_toBottomOf="@+id/jokeBody" />
+
+    <Button
+        android:id="@+id/PreviousJoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="18dp"
+        android:onClick="PrevJoke"
+        android:text="@string/previous"
+        app:layout_constraintRight_toLeftOf="@id/ResetJoke"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jokeBody"
+        android:layout_marginEnd="18dp" />
+
+    <Button
+        android:id="@+id/ResetJoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:onClick="ResetJoke"
+        android:text="@string/reset"
+        app:layout_constraintLeft_toRightOf="@id/PreviousJoke"
+        app:layout_constraintTop_toBottomOf="@+id/jokeBody"
+        android:layout_marginStart="18dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
